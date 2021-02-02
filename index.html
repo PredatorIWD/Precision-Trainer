@@ -6,6 +6,16 @@
     <title>Unity WebGL Player | Precision Trainer</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+	<style>
+	/* Maximize game window on the page */
+	#unity-canvas, #unity-container {
+		height: 100% !important;
+		width: 100% !important;
+		transform: none !important;
+		left: auto !important;
+		top: auto !important;
+	}
+	</style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -18,11 +28,6 @@
       </div>
       <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
-      </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Precision Trainer</div>
       </div>
     </div>
     <script>
